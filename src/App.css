@@ -1,3 +1,54 @@
 .App {
   height: 100vh;
+  display: flex;
+  overflow: hidden;
 }
+
+.explorer {
+  background-color: #232323;
+  width: 20%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.file-list {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.file-list h3 {
+  padding-top: 10px;
+  color: #fff;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.file-item, .file-item-selected {
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.file-item {
+  color: gray;
+}
+
+.file-item:hover, .file-item-selected:hover {
+  cursor: pointer;
+  background-color: slategray;
+  color: #fff;
+}
+
+.file-item-selected {
+  color: #fff;
+}
+
+.openfolder {
+  padding-top: 10px;
+}
+
